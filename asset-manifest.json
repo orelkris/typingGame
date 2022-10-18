@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/typingGame/static/css/main.ccc7e2c6.css",
+    "main.js": "/typingGame/static/js/main.6575c921.js",
+    "static/js/787.59e57e67.chunk.js": "/typingGame/static/js/787.59e57e67.chunk.js",
+    "index.html": "/typingGame/index.html",
+    "main.ccc7e2c6.css.map": "/typingGame/static/css/main.ccc7e2c6.css.map",
+    "main.6575c921.js.map": "/typingGame/static/js/main.6575c921.js.map",
+    "787.59e57e67.chunk.js.map": "/typingGame/static/js/787.59e57e67.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccc7e2c6.css",
+    "static/js/main.6575c921.js"
+  ]
+}
