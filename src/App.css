@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+/* NORMALIZE */
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font: 1rem/1.5 'Comic Sans MS', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dd,
+p,
+figure,
+pre,
+table,
+fieldset,
+img,
+hr {
+  margin-bottom: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: 'Cutive Mono', monospace;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+}
+
+/* Game Container */
+.game__container {
+  background: #010101;
+  color: rgb(34, 231, 34);
+  width: 50%;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  border: 1px solid black;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.game__title {
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game__area {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 1.2rem;
+  height: 15rem;
+  width: 80%;
+  max-width: 25rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  transition: all 250ms;
+}
+
+.game__area:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px 5px rgb(14, 228, 60);
+}
+
+.game__start-container {
+  height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.game__timer {
+  font-size: 1.2rem;
+}
+
+.game__start-button {
+  background-color: rgb(34, 231, 34);
+  font-family: 'Cutive Mono', monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px 2px rgb(9, 187, 48);
+
+  transition: all 350ms;
+}
+
+.game__start-button:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+  box-shadow: 0px 0px 10px 2px rgb(9, 187, 48);
+}
+
+.game__start-button:disabled {
+  cursor: auto;
+  filter: brightness(1);
+  box-shadow: 0px 0px 5px 2px rgb(9, 187, 48);
+}
+
+.game__start-button:active {
+  margin-top: 0.2rem;
+}
+
+.game__wordcount {
+  font-size: 1.2rem;
 }
